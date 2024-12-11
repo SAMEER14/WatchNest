@@ -1,6 +1,7 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
 import { toggleMenu } from '../utils/appSlice';
+import { Link } from 'react-router-dom';
 
 const Head = () => {
 
@@ -12,7 +13,7 @@ const Head = () => {
   };
 
   return (
-    <div className='grid grid-flow-col p-3 m-2 shadow-lg'>
+    <div className='grid grid-flow-col p-2 m-2 shadow-lg'>
         
       <div className="flex items-center col-span-1 "> 
         
@@ -26,12 +27,12 @@ const Head = () => {
             alt="menu" 
             src="https://www.svgrepo.com/show/452302/hamburger-menu.svg"/> 
         
-
         <img
             // className='h-10'
             className="w-20 h-auto mx-2" 
             alt="youtube-logo"
             src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/youtube-logo-icon.png"/>
+    
       </div>
 
       <div className='col-span-10 pt-6'>
