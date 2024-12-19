@@ -77,4 +77,36 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - Made sidebar toggle using redux store
 - Created button list just like youtube 
 
+
+Video 2 
+
+HOC / Function example youtube ad
+
+Youtube search bar
+//how search works , see youtube search and also flipkart search bar as both youtube search api is very fast 
+
+CONCEPT used in search is DEBOUNCING 
+
+Deboucing understanding -> skipping some events 
+
+so when typing SLOW - like each keystroke time - 300ms
+when typing FAST - 100ms 
+so in typing fast we dont need suggestions too early 
+
+Like if we search 
+iphone pro max - 14 letter , if 1000 people searched - 14000 search api call made
+USING deboucing - it made 3 api calls therefore 3000 searcgapi call
+
+it makes a huge difference in performace
+
+we can also give result after typing but giving result just after every key stroke giving a better user experience
+
+
+Debouncing with 200ms
+- if difference between keystroke is < 200ms - DECLINE API call
+- > 200ms make an API CALL
+
  -->
+
+
+<!-- HW - Perform search when click on keyword from search bar - like iphone - clicked in iphone 16 search iphone 16 -->

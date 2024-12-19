@@ -2,9 +2,7 @@ import React from 'react'
 
 const VideoCards = ({info}) => {
 
-
-
-    console.log(info);
+    // console.log(info);
 
     const { snippet,statistics } = info;
     const { channelTitle, title, thumbnails } = snippet;
@@ -30,5 +28,15 @@ const VideoCards = ({info}) => {
     </div>
   )
 }
+
+
+//HOC 
+// export const VideoCardBorder = (VideoCards) => {
+//   return <div className='p-1 m-1 border border-black'>
+//           <VideoCards />
+//         </div>
+// }
+//This VideoCardBorder is a HIGHE ORDER COMPONENT/FUNCTION here
+//Example in youtube page an add in video list page
 
 export default VideoCards

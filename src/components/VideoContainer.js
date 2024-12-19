@@ -1,7 +1,7 @@
 import React from 'react';
 import { useEffect,useState } from 'react';
 import { YOUTUBE_VIDEO_API } from '../utils/constants';
-import VideoCards from './VideoCards';
+import VideoCards, {VideoCardBorder} from './VideoCards';
 import { Link } from 'react-router-dom';
 
 const VideoContainer = () => {
@@ -17,9 +17,8 @@ useEffect(() => {
 const getVideos = async() =>{
   const data = await fetch(YOUTUBE_VIDEO_API);
   const json = await data.json();
-  console.log(json.items);
+  // console.log(json.items);
   setVideos(json.items)
-
 }
 
 return (
@@ -29,8 +28,9 @@ return (
       {/* iterate over map */}
       {
         videos.map((video) => (
-          <Link to={"/watch?v="+video.id}> 
-            <VideoCards key={video.id} info={video}/> 
+          <Link key={video.id} to={"/watch?v="+video.id}> 
+            <VideoCards info={video}/> 
+            {/* <VideoCardBorder /> */}
           </Link>
               )
             )
@@ -40,4 +40,5 @@ return (
   );
 };
 
-export default VideoContainer
+
+export default VideoContainer;
