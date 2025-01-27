@@ -129,7 +129,8 @@ const commentsData = [
 
 //data is comment we will pass
 const  Comment = ({ data }) => {
-  const {name, text, replies} = data;
+  // const {name, text, replies} = data;
+  const {name, text} = data;
   return (
   <div className='p-2 flex bg-gray-100 rounded-md my-2'>
     <img 

@@ -1,5 +1,6 @@
-import { current } from '@reduxjs/toolkit';
-import React, { useRef, useState,useEffect } from 'react'
+// import { current } from '@reduxjs/toolkit';
+// import React, { useRef, useState,useEffect } from 'react'
+import React, { useRef, useState } from 'react'
 
 const Demo2 = () => {
 
