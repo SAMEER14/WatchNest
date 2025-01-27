@@ -169,6 +169,12 @@ const Head = () => {
       </div>
 
       <div>
+        <button className='py-2 px-2 mx-4 my-2 bg-red-600 text-white rounded-lg'>
+            GPT Search
+        </button>
+      </div>
+      
+      <div>
         <img
             className='w-10 h-10 col-span-1' 
             alt="user" 
