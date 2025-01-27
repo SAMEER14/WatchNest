@@ -35,7 +35,11 @@ const Head = () => {
     return () =>{
       clearTimeout(timer);
     }
-  }, [searchQuery])
+  }, 
+  // [searchQuery]
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  [searchQuery]
+)
 
   /*
   Keystroke - i
@@ -78,7 +82,11 @@ const Head = () => {
     return () => {
       clearTimeout(timer);
     };
-  }, [searchQuery])
+  }, 
+  // [searchQuery]
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  [searchQuery]
+)
 
 
   //api call for suggestions
@@ -173,7 +181,7 @@ const Head = () => {
             GPT Search
         </button>
       </div>
-      
+
       <div>
         <img
             className='w-10 h-10 col-span-1' 
