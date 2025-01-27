@@ -20,7 +20,8 @@ const VideoCards = ({info}) => {
       <img className='rounded-lg w-full h-40 object-cover' src={thumbnails.medium.url} alt="videoThumbnail" />
       <ul className="mt-3">
         <li className="text-sm font-semibold text-gray-800 line-clamp-2">{title}</li>
-        <li className="text-sm text-gray-600 mt-1">{channelTitle}</li>
+        {/* <li className="text-sm text-gray-600 mt-1">{channelTitle}</li> */}
+        <li className="font-semibold mt-2">{channelTitle}</li>
         <li className="text-sm text-gray-500 mt-1">{viewCount} views</li>
         {/* <li className="text-sm text-gray-500 mt-1">{formatViews(viewCount)}</li> */}
 

@@ -104,7 +104,7 @@ const Head = () => {
   };
 
   return (
-    <div className='grid grid-flow-col p-2 m-2 shadow-lg'>
+    <div className='grid grid-flow-col p-2 m-2 shadow-lg sticky top-0 bg-white z-50'>
         
       <div className="flex items-center col-span-1 "> 
         

@@ -110,3 +110,8 @@ Debouncing with 200ms
 
 
 <!-- HW - Perform search when click on keyword from search bar - like iphone - clicked in iphone 16 search iphone 16 -->
+<!-- HW - MAKE INFINTE SCROLLING -->
+<!-- Make video show othe than using iframe may be  -->
+<!-- live comments from that video -->
+<!-- more UI same like youtube page -->
+<!-- LASTLY try live chat api and normal video different UI same UI just render the different component  -->

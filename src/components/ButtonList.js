@@ -30,11 +30,12 @@ const ButtonList = () => {
 
   return (
 
-    <div className='flex overflow-x-auto space-x-4'>
+    // <div className='flex overflow-x-auto space-x-4'>
+    <div>
 {/* USE SCROLL using button using CSS */}
 
       {/* ------------------------ BUTTON MAP METHOD HERE*/}
-      <div className='flex overflow-x-auto space-x-4 scrollbar-hide' >
+      <div className='flex space-x-4' >
       {
       buttonListName.map((buttonName, index) => 
         <Button key ={index} name={buttonName}/>
